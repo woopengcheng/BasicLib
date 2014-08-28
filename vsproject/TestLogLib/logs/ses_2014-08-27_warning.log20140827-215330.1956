@@ -1,0 +1,5 @@
+Log file created at: 2014/08/27 21:53:30
+Running on machine: гуза
+Log line format: [IWEF]mmdd hh:mm:ss.uuuuuu threadid file:line] msg
+E0827 21:53:30.733603  6064 GLogAdaptee.cpp:58] asdfadf
+W0827 21:53:30.734742  6064 GLogAdaptee.cpp:63] 
