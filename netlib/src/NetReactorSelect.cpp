@@ -97,12 +97,12 @@ namespace Net
 
 				if (FD_ISSET(socket , pFdSetReads))
 				{
-					bClosed = pNetHandler->OnMsgRecving() <= 0 || bClosed;
+					bClosed = pNetHandler->OnMsgRecving() < 0 || bClosed;
 				}
 
 				if (FD_ISSET(socket , pFdSetWrites))
 				{
-					bClosed = pNetHandler->OnMsgSending() <= 0 || bClosed;
+					bClosed = pNetHandler->OnMsgSending() < 0 || bClosed;
 				}
 
 				if (FD_ISSET(socket , pFdSetExcepts))

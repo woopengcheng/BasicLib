@@ -1,5 +1,6 @@
 #include "NetHandlerTransit.h"
 #include "NetHelper.h"
+#include "ByteOrder.h"
 
 #ifdef WIN32
 #include "Winsock.h"
@@ -35,6 +36,7 @@ namespace Net
 			nRes = setsockopt(socket,SOL_SOCKET,SO_SNDBUF,(char*)&sendbuf,sizeof(sendbuf));
 			nRes = setsockopt(socket,SOL_SOCKET,SO_RCVBUF,(char*)&recvbuf,sizeof(recvbuf));
 
+			INetHandler::SetSocket(socket);
 		} 
 		return ;
 	}
@@ -96,7 +98,7 @@ namespace Net
 			if(nRecvBuf < sizeof(UINT32))
 				Assert_Re(0 && "msg header failed." , -1);
 
-//			pwutils::Convert<uint32>::ToHostOrder(unMsgLength);
+//			Convert<UINT32>::ToHostOrder(unMsgLength);
 
 			// 错误的包长,直接断开
 			if(unMsgLength > MAX_MESSAGE_LENGTH || unMsgLength <= 0)
@@ -257,7 +259,7 @@ namespace Net
 		{
 			m_pSession->OnClose();
 		} 
-
+		closesocket(GetSocket());
 		return NET_ERROR_SUCCESS;
 	}
 

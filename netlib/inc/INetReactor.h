@@ -3,6 +3,10 @@
 #include "INetHandler.h"
 #include "NetCommon.h"
 
+#ifdef WIN32
+#include <Windows.h>
+#endif
+
 namespace Net 
 {  
 	enum ENetHandlerFuncMask
@@ -22,8 +26,12 @@ namespace Net
 	class INetReactor
 	{
 	public:
-		INetReactor( void ){}
-		virtual ~INetReactor( void ){}
+		INetReactor( void )
+		{
+		}
+		virtual ~INetReactor( void )
+{
+}
 
 	public:
 		virtual INT32   Init( void ) = 0;

@@ -8,12 +8,21 @@
 
 int _tmain(int argc, _TCHAR* argv[])
 {   
+#ifdef WIN32
+	WSADATA wsd;
+	WSAStartup(MAKEWORD(2,2),&wsd);
+#endif
+
 	int nCount = ThreadPool::ThreadPoolInterface::GetInstance().GetThreadsCount(); 
 	Server server;
 	server.Init();
 
 	server.Update();
 
+
+#ifdef _WIN32
+	WSACleanup();
+#endif
 	return 0;
 }
 

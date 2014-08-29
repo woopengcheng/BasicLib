@@ -120,14 +120,13 @@ namespace Util
 			char * pWriter = m_pDataStartPos + m_unDataLength;
 			ReCalcPtrPos(pWriter);
 
-			UINT32 unMinSize = __min(__min(m_unDataLength , unSize),static_cast<UINT32>(m_pDataHead + m_unTotalSize - pWriter));
-			if (unMinSize <= 0)
+			UINT32 unMinSize = __min(__min(m_unTotalSize - m_unDataLength , unSize),static_cast<UINT32>(m_pDataHead + m_unTotalSize - pWriter));
+			if (unMinSize < 0)
 			{
 				return 0;
 			} 
 
 			memcpy(pWriter , pBuf , unMinSize);
-			m_pDataStartPos += unMinSize;
 			ReCalcPtrPos(m_pDataStartPos);
 			pBuf += unMinSize;
 			unSize -= unMinSize;

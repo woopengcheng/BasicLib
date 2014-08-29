@@ -8,8 +8,11 @@ namespace Net
 	{
 	public:
 		NetHandlerClient(ISession * pSession)
-			: NetHandlerTransit(pSession) 
-		{}
+			: NetHandlerTransit(pSession)  
+		{ 
+			SOCKET socket = ::socket(AF_INET , SOCK_STREAM , 0);
+			SetSocket(socket);
+		}
 		virtual ~NetHandlerClient(){} 
 
 	public:

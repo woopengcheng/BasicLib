@@ -24,6 +24,12 @@ INT32 Client::Update()
 	while(1)
 	{
 		m_pNetReactor->Update();
+
+		char pBuf[1024]; 
+		((Net::MsgHeader*)pBuf)->unMsgID = 0;
+		((Net::MsgHeader*)pBuf)->unMsgLength = 6+ sizeof(Net::MsgHeader);
+		memcpy(pBuf + sizeof(Net::MsgHeader) , "asdfa" , 6);
+		SendMsg(pBuf , 6 + sizeof(Net::MsgHeader));
 		Timer::TimerHelper::sleep(1); 
 	}
 	return TRUE;

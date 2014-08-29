@@ -25,7 +25,9 @@
 #ifdef WIN32
 typedef __int64   INT64;
 typedef unsigned __int64   UINT64;
+typedef unsigned char    SINT8;
 #else
+typedef unsigned char    SINT8;
 typedef char             INT8;   //5 win32  下居然有了
 typedef long long INT64;
 typedef unsigned long long UINT64;

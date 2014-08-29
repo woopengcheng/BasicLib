@@ -79,6 +79,7 @@ namespace Net
 		if (m_pNetReactor)
 		{
 			NetHandlerServer * pServer = new NetHandlerServer(new ServerSession);
+			pServer->SetSocket(socket);
 			m_pNetReactor->AddNetHandler(pServer);
 		}
 	}

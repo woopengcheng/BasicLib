@@ -128,5 +128,8 @@
     <ClInclude Include="..\..\netlib\inc\Server.h">
       <Filter>inc</Filter>
     </ClInclude>
+    <ClInclude Include="..\..\netlib\inc\ByteOrder.h">
+      <Filter>common</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>

@@ -227,6 +227,7 @@
     <ClInclude Include="..\..\Common\MsgProcess.h" />
     <ClInclude Include="..\..\Common\MsgWrapper.h" />
     <ClInclude Include="..\..\Common\NetCommon.h" />
+    <ClInclude Include="..\..\netlib\inc\ByteOrder.h" />
     <ClInclude Include="..\..\netlib\inc\INetHandler.h" />
     <ClInclude Include="..\..\netlib\inc\INetReactor.h" />
     <ClInclude Include="..\..\netlib\inc\ISession.h" />
