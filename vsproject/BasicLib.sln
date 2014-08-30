@@ -58,6 +58,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "TestInnerMsgLib", "TestInne
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "TestNetLib_client", "TestNetLib_client\TestNetLib_client.vcxproj", "{3196DD53-CE07-469F-888C-505A640D00A5}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "RpcMsgLib", "RpcMsgLib\RpcMsgLib.vcxproj", "{63548180-E00B-4139-B0DA-FBDE8F72A9A3}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Win32 = Debug|Win32
@@ -224,6 +226,16 @@ Global
 		{3196DD53-CE07-469F-888C-505A640D00A5}.Release|Win32.Build.0 = Release|Win32
 		{3196DD53-CE07-469F-888C-505A640D00A5}.Release|x64.ActiveCfg = Release|x64
 		{3196DD53-CE07-469F-888C-505A640D00A5}.Release|x64.Build.0 = Release|x64
+		{63548180-E00B-4139-B0DA-FBDE8F72A9A3}.Debug|Win32.ActiveCfg = Debug|Win32
+		{63548180-E00B-4139-B0DA-FBDE8F72A9A3}.Debug|Win32.Build.0 = Debug|Win32
+		{63548180-E00B-4139-B0DA-FBDE8F72A9A3}.Debug|x64.ActiveCfg = Debug|Win32
+		{63548180-E00B-4139-B0DA-FBDE8F72A9A3}.LibDebug|Win32.ActiveCfg = Debug|Win32
+		{63548180-E00B-4139-B0DA-FBDE8F72A9A3}.LibDebug|Win32.Build.0 = Debug|Win32
+		{63548180-E00B-4139-B0DA-FBDE8F72A9A3}.LibDebug|x64.ActiveCfg = LibDebug|x64
+		{63548180-E00B-4139-B0DA-FBDE8F72A9A3}.LibDebug|x64.Build.0 = LibDebug|x64
+		{63548180-E00B-4139-B0DA-FBDE8F72A9A3}.Release|Win32.ActiveCfg = Release|Win32
+		{63548180-E00B-4139-B0DA-FBDE8F72A9A3}.Release|Win32.Build.0 = Release|Win32
+		{63548180-E00B-4139-B0DA-FBDE8F72A9A3}.Release|x64.ActiveCfg = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
