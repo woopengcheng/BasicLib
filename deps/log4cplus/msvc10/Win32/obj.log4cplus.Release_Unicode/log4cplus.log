@@ -1,0 +1,129 @@
+﻿生成启动时间为 2014/7/26 13:51:37。
+     1>项目“D:\Subversion\netlib\deps\log4cplus\msvc10\log4cplus.vcxproj”在节点 2 上(build 个目标)。
+     1>PrepareForBuild:
+         正在创建目录“D:\Subversion\netlib\deps\log4cplus\msvc10\Win32\bin.Release_Unicode\”。
+       InitializeBuildStatus:
+         正在创建“D:\Subversion\netlib\deps\log4cplus\msvc10\Win32\obj.log4cplus.Release_Unicode\log4cplus.unsuccessfulbuild”，因为已指定“AlwaysCreate”。
+       ClCompile:
+         D:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /I..\include /Zi /nologo /W3 /WX- /O2 /Ob2 /Oi /Ot /Oy /GL /D LOG4CPLUS_BUILD_DLL /D NDEBUG /D _SECURE_SCL=0 /D _HAS_ITERATOR_DEBUGGING=0 /D WIN32 /D _WIN32_WINNT=0x0501 /D WINVER=0x0501 /D INSIDE_LOG4CPLUS /D _SCL_SECURE_NO_DEPRECATE /D _CRT_SECURE_NO_DEPRECATE /D _CRT_SECURE_NO_WARNINGS /D _WINDLL /D _UNICODE /D UNICODE /GF /Gm- /EHsc /MD /GS- /Gy /fp:precise /Zc:wchar_t /Zc:forScope /Fo"D:\Subversion\netlib\deps\log4cplus\msvc10\Win32\obj.log4cplus.Release_Unicode\\" /Fd"D:\Subversion\netlib\deps\log4cplus\msvc10\Win32\bin.Release_Unicode\log4cplusU.c.pdb" /Gd /TP /analyze- /errorReport:prompt ..\src\appender.cxx ..\src\clogger.cxx ..\src\configurator.cxx ..\src\fileinfo.cxx "..\src\global-init.cxx" ..\src\hierarchy.cxx ..\src\hierarchylocker.cxx ..\src\layout.cxx ..\src\lockfile.cxx ..\src\log4judpappender.cxx ..\src\logger.cxx ..\src\loggingevent.cxx ..\src\loggingmacros.cxx ..\src\mdc.cxx ..\src\ndc.cxx ..\src\patternlayout.cxx ..\src\version.cxx ..\src\asyncappender.cxx ..\src\consoleappender.cxx ..\src\fileappender.cxx ..\src\nteventlogappender.cxx ..\src\nullappender.cxx ..\src\socketappender.cxx ..\src\syslogappender.cxx ..\src\win32consoleappender.cxx ..\src\win32debugappender.cxx ..\src\env.cxx ..\src\factory.cxx ..\src\filter.cxx ..\src\loggerimpl.cxx ..\src\loglevel.cxx ..\src\objectregistry.cxx ..\src\rootlogger.cxx ..\src\syncprims.cxx ..\src\threads.cxx ..\src\tls.cxx ..\src\appenderattachableimpl.cxx ..\src\loglog.cxx ..\src\logloguser.cxx ..\src\pointer.cxx ..\src\property.cxx ..\src\queue.cxx ..\src\sleep.cxx ..\src\snprintf.cxx "..\src\socket-win32.cxx" ..\src\socket.cxx ..\src\socketbuffer.cxx "..\src\stringhelper-clocale.cxx" "..\src\stringhelper-cxxlocale.cxx" "..\src\stringhelper-iconv.cxx" ..\src\stringhelper.cxx ..\src\timehelper.cxx
+         appender.cxx
+         clogger.cxx
+         configurator.cxx
+         fileinfo.cxx
+         global-init.cxx
+         hierarchy.cxx
+         hierarchylocker.cxx
+         layout.cxx
+         lockfile.cxx
+         log4judpappender.cxx
+         logger.cxx
+         loggingevent.cxx
+         loggingmacros.cxx
+         mdc.cxx
+         ndc.cxx
+         patternlayout.cxx
+         version.cxx
+         asyncappender.cxx
+         consoleappender.cxx
+         fileappender.cxx
+         正在编译...
+         nteventlogappender.cxx
+         nullappender.cxx
+         socketappender.cxx
+         syslogappender.cxx
+         win32consoleappender.cxx
+         win32debugappender.cxx
+         env.cxx
+         factory.cxx
+         filter.cxx
+         loggerimpl.cxx
+         loglevel.cxx
+         objectregistry.cxx
+         rootlogger.cxx
+         syncprims.cxx
+         threads.cxx
+         tls.cxx
+         appenderattachableimpl.cxx
+         loglog.cxx
+         logloguser.cxx
+         pointer.cxx
+         正在编译...
+         property.cxx
+         queue.cxx
+         sleep.cxx
+         snprintf.cxx
+         socket-win32.cxx
+         socket.cxx
+         socketbuffer.cxx
+         stringhelper-clocale.cxx
+         stringhelper-cxxlocale.cxx
+         stringhelper-iconv.cxx
+         stringhelper.cxx
+         timehelper.cxx
+       Link:
+         D:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"D:\Subversion\netlib\deps\log4cplus\msvc10\Win32\bin.Release_Unicode\log4cplusU.dll" /INCREMENTAL:NO /NOLOGO ws2_32.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /ManifestFile:"D:\Subversion\netlib\deps\log4cplus\msvc10\Win32\obj.log4cplus.Release_Unicode\log4cplusU.dll.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /DEBUG /PDB:"D:\Subversion\netlib\deps\log4cplus\msvc10\Win32\bin.Release_Unicode\log4cplusU.pdb" /OPT:REF /OPT:NOICF /LTCG /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"D:\Subversion\netlib\deps\log4cplus\msvc10\Win32\bin.Release_Unicode\log4cplusU.lib" /MACHINE:X86 /DLL D:\Subversion\netlib\deps\log4cplus\msvc10\Win32\obj.log4cplus.Release_Unicode\appender.obj
+         D:\Subversion\netlib\deps\log4cplus\msvc10\Win32\obj.log4cplus.Release_Unicode\clogger.obj
+         D:\Subversion\netlib\deps\log4cplus\msvc10\Win32\obj.log4cplus.Release_Unicode\configurator.obj
+         D:\Subversion\netlib\deps\log4cplus\msvc10\Win32\obj.log4cplus.Release_Unicode\fileinfo.obj
+         "D:\Subversion\netlib\deps\log4cplus\msvc10\Win32\obj.log4cplus.Release_Unicode\global-init.obj"
+         D:\Subversion\netlib\deps\log4cplus\msvc10\Win32\obj.log4cplus.Release_Unicode\hierarchy.obj
+         D:\Subversion\netlib\deps\log4cplus\msvc10\Win32\obj.log4cplus.Release_Unicode\hierarchylocker.obj
+         D:\Subversion\netlib\deps\log4cplus\msvc10\Win32\obj.log4cplus.Release_Unicode\layout.obj
+         D:\Subversion\netlib\deps\log4cplus\msvc10\Win32\obj.log4cplus.Release_Unicode\lockfile.obj
+         D:\Subversion\netlib\deps\log4cplus\msvc10\Win32\obj.log4cplus.Release_Unicode\log4judpappender.obj
+         D:\Subversion\netlib\deps\log4cplus\msvc10\Win32\obj.log4cplus.Release_Unicode\logger.obj
+         D:\Subversion\netlib\deps\log4cplus\msvc10\Win32\obj.log4cplus.Release_Unicode\loggingevent.obj
+         D:\Subversion\netlib\deps\log4cplus\msvc10\Win32\obj.log4cplus.Release_Unicode\loggingmacros.obj
+         D:\Subversion\netlib\deps\log4cplus\msvc10\Win32\obj.log4cplus.Release_Unicode\mdc.obj
+         D:\Subversion\netlib\deps\log4cplus\msvc10\Win32\obj.log4cplus.Release_Unicode\ndc.obj
+         D:\Subversion\netlib\deps\log4cplus\msvc10\Win32\obj.log4cplus.Release_Unicode\patternlayout.obj
+         D:\Subversion\netlib\deps\log4cplus\msvc10\Win32\obj.log4cplus.Release_Unicode\version.obj
+         D:\Subversion\netlib\deps\log4cplus\msvc10\Win32\obj.log4cplus.Release_Unicode\asyncappender.obj
+         D:\Subversion\netlib\deps\log4cplus\msvc10\Win32\obj.log4cplus.Release_Unicode\consoleappender.obj
+         D:\Subversion\netlib\deps\log4cplus\msvc10\Win32\obj.log4cplus.Release_Unicode\fileappender.obj
+         D:\Subversion\netlib\deps\log4cplus\msvc10\Win32\obj.log4cplus.Release_Unicode\nteventlogappender.obj
+         D:\Subversion\netlib\deps\log4cplus\msvc10\Win32\obj.log4cplus.Release_Unicode\nullappender.obj
+         D:\Subversion\netlib\deps\log4cplus\msvc10\Win32\obj.log4cplus.Release_Unicode\socketappender.obj
+         D:\Subversion\netlib\deps\log4cplus\msvc10\Win32\obj.log4cplus.Release_Unicode\syslogappender.obj
+         D:\Subversion\netlib\deps\log4cplus\msvc10\Win32\obj.log4cplus.Release_Unicode\win32consoleappender.obj
+         D:\Subversion\netlib\deps\log4cplus\msvc10\Win32\obj.log4cplus.Release_Unicode\win32debugappender.obj
+         D:\Subversion\netlib\deps\log4cplus\msvc10\Win32\obj.log4cplus.Release_Unicode\env.obj
+         D:\Subversion\netlib\deps\log4cplus\msvc10\Win32\obj.log4cplus.Release_Unicode\factory.obj
+         D:\Subversion\netlib\deps\log4cplus\msvc10\Win32\obj.log4cplus.Release_Unicode\filter.obj
+         D:\Subversion\netlib\deps\log4cplus\msvc10\Win32\obj.log4cplus.Release_Unicode\loggerimpl.obj
+         D:\Subversion\netlib\deps\log4cplus\msvc10\Win32\obj.log4cplus.Release_Unicode\loglevel.obj
+         D:\Subversion\netlib\deps\log4cplus\msvc10\Win32\obj.log4cplus.Release_Unicode\objectregistry.obj
+         D:\Subversion\netlib\deps\log4cplus\msvc10\Win32\obj.log4cplus.Release_Unicode\rootlogger.obj
+         D:\Subversion\netlib\deps\log4cplus\msvc10\Win32\obj.log4cplus.Release_Unicode\syncprims.obj
+         D:\Subversion\netlib\deps\log4cplus\msvc10\Win32\obj.log4cplus.Release_Unicode\threads.obj
+         D:\Subversion\netlib\deps\log4cplus\msvc10\Win32\obj.log4cplus.Release_Unicode\tls.obj
+         D:\Subversion\netlib\deps\log4cplus\msvc10\Win32\obj.log4cplus.Release_Unicode\appenderattachableimpl.obj
+         D:\Subversion\netlib\deps\log4cplus\msvc10\Win32\obj.log4cplus.Release_Unicode\loglog.obj
+         D:\Subversion\netlib\deps\log4cplus\msvc10\Win32\obj.log4cplus.Release_Unicode\logloguser.obj
+         D:\Subversion\netlib\deps\log4cplus\msvc10\Win32\obj.log4cplus.Release_Unicode\pointer.obj
+         D:\Subversion\netlib\deps\log4cplus\msvc10\Win32\obj.log4cplus.Release_Unicode\property.obj
+         D:\Subversion\netlib\deps\log4cplus\msvc10\Win32\obj.log4cplus.Release_Unicode\queue.obj
+         D:\Subversion\netlib\deps\log4cplus\msvc10\Win32\obj.log4cplus.Release_Unicode\sleep.obj
+         D:\Subversion\netlib\deps\log4cplus\msvc10\Win32\obj.log4cplus.Release_Unicode\snprintf.obj
+         "D:\Subversion\netlib\deps\log4cplus\msvc10\Win32\obj.log4cplus.Release_Unicode\socket-win32.obj"
+         D:\Subversion\netlib\deps\log4cplus\msvc10\Win32\obj.log4cplus.Release_Unicode\socket.obj
+         D:\Subversion\netlib\deps\log4cplus\msvc10\Win32\obj.log4cplus.Release_Unicode\socketbuffer.obj
+         "D:\Subversion\netlib\deps\log4cplus\msvc10\Win32\obj.log4cplus.Release_Unicode\stringhelper-clocale.obj"
+         "D:\Subversion\netlib\deps\log4cplus\msvc10\Win32\obj.log4cplus.Release_Unicode\stringhelper-cxxlocale.obj"
+         "D:\Subversion\netlib\deps\log4cplus\msvc10\Win32\obj.log4cplus.Release_Unicode\stringhelper-iconv.obj"
+         D:\Subversion\netlib\deps\log4cplus\msvc10\Win32\obj.log4cplus.Release_Unicode\stringhelper.obj
+         D:\Subversion\netlib\deps\log4cplus\msvc10\Win32\obj.log4cplus.Release_Unicode\timehelper.obj
+            正在创建库 D:\Subversion\netlib\deps\log4cplus\msvc10\Win32\bin.Release_Unicode\log4cplusU.lib 和对象 D:\Subversion\netlib\deps\log4cplus\msvc10\Win32\bin.Release_Unicode\log4cplusU.exp
+         正在生成代码
+         已完成代码的生成
+         log4cplus.vcxproj -> D:\Subversion\netlib\deps\log4cplus\msvc10\Win32\bin.Release_Unicode\log4cplusU.dll
+       Manifest:
+         C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\mt.exe /nologo /verbose /outputresource:"D:\Subversion\netlib\deps\log4cplus\msvc10\Win32\bin.Release_Unicode\log4cplusU.dll;#2" /manifest D:\Subversion\netlib\deps\log4cplus\msvc10\Win32\obj.log4cplus.Release_Unicode\log4cplusU.dll.intermediate.manifest
+       FinalizeBuildStatus:
+         正在删除文件“D:\Subversion\netlib\deps\log4cplus\msvc10\Win32\obj.log4cplus.Release_Unicode\log4cplus.unsuccessfulbuild”。
+         正在对“D:\Subversion\netlib\deps\log4cplus\msvc10\Win32\obj.log4cplus.Release_Unicode\log4cplus.lastbuildstate”执行 Touch 任务。
+     1>已完成生成项目“D:\Subversion\netlib\deps\log4cplus\msvc10\log4cplus.vcxproj”(build 个目标)的操作。
+
+生成成功。
+
+已用时间 00:00:54.35

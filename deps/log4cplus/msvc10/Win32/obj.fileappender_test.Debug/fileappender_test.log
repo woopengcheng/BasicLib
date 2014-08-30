@@ -1,0 +1,26 @@
+﻿生成启动时间为 2014/7/20 16:35:02。
+     1>项目“D:\Downloads\log4cplus-1.1.3-rc2\msvc10\tests\fileappender_test.vcxproj”在节点 2 上(build 个目标)。
+     1>InitializeBuildStatus:
+         正在创建“D:\Downloads\log4cplus-1.1.3-rc2\msvc10\Win32\obj.fileappender_test.Debug\fileappender_test.unsuccessfulbuild”，因为已指定“AlwaysCreate”。
+       ClCompile:
+         所有输出均为最新。
+       ManifestResourceCompile:
+         所有输出均为最新。
+       Link:
+         D:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"D:\Downloads\log4cplus-1.1.3-rc2\msvc10\Win32\bin.Debug\fileappender_test.exe" /INCREMENTAL /NOLOGO /LIBPATH:"D:\Downloads\log4cplus-1.1.3-rc2\msvc10\Win32\bin.Debug" log4cplusd.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /ManifestFile:"D:\Downloads\log4cplus-1.1.3-rc2\msvc10\Win32\obj.fileappender_test.Debug\fileappender_test.exe.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /DEBUG /PDB:"D:\Downloads\log4cplus-1.1.3-rc2\msvc10\Win32\bin.Debug\fileappender_test.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /FIXED:NO /NXCOMPAT /IMPLIB:"D:\Downloads\log4cplus-1.1.3-rc2\msvc10\Win32\bin.Debug\fileappender_test.lib" /MACHINE:X86 "D:\Downloads\log4cplus-1.1.3-rc2\msvc10\Win32\obj.fileappender_test.Debug\fileappender_test.exe.embed.manifest.res"
+         "D:\Downloads\log4cplus-1.1.3-rc2\msvc10\Win32\obj.fileappender_test.Debug\main.obj"
+         "D:\Downloads\log4cplus-1.1.3-rc2\msvc10\Win32\bin.Debug\log4cplusD.lib"
+       Manifest:
+         C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\mt.exe /nologo /verbose /out:"D:\Downloads\log4cplus-1.1.3-rc2\msvc10\Win32\obj.fileappender_test.Debug\fileappender_test.exe.embed.manifest" /manifest "D:\Downloads\log4cplus-1.1.3-rc2\msvc10\Win32\obj.fileappender_test.Debug\fileappender_test.exe.intermediate.manifest"
+         所有输出均为最新。
+       LinkEmbedManifest:
+         所有输出均为最新。
+         fileappender_test.vcxproj -> D:\Downloads\log4cplus-1.1.3-rc2\msvc10\Win32\bin.Debug\fileappender_test.exe
+       FinalizeBuildStatus:
+         正在删除文件“D:\Downloads\log4cplus-1.1.3-rc2\msvc10\Win32\obj.fileappender_test.Debug\fileappender_test.unsuccessfulbuild”。
+         正在对“D:\Downloads\log4cplus-1.1.3-rc2\msvc10\Win32\obj.fileappender_test.Debug\fileappender_test.lastbuildstate”执行 Touch 任务。
+     1>已完成生成项目“D:\Downloads\log4cplus-1.1.3-rc2\msvc10\tests\fileappender_test.vcxproj”(build 个目标)的操作。
+
+生成成功。
+
+已用时间 00:00:01.19

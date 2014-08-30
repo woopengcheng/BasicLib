@@ -1,0 +1,24 @@
+﻿生成启动时间为 2014/7/20 10:25:09。
+     1>项目“D:\Subversion\netlib\deps\log4cpp\msvc10\testMain\testMain.vcxproj”在节点 2 上(build 个目标)。
+     1>InitializeBuildStatus:
+         正在创建“.\Debug\testMain.unsuccessfulbuild”，因为已指定“AlwaysCreate”。
+       ClCompile:
+         D:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /I..\..\include /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _MBCS /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo".\Debug/" /Fd".\Debug/vc100.pdb" /Gd /TP /analyze- /errorReport:prompt ..\..\tests\testmain.cpp
+         testmain.cpp
+     1>d:\subversion\netlib\deps\log4cpp\tests\testmain.cpp(83): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 d:\program files (x86)\microsoft visual studio 10.0\vc\include\stdio.h(371) : 参见“sprintf”的声明
+       Link:
+         D:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:".\Debug/testMain.exe" /INCREMENTAL:NO /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /ManifestFile:".\Debug\testMain.exe.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /DEBUG /PDB:".\Debug/testMain.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:".\Debug\testMain.lib" /MACHINE:X86 .\Debug/testmain.obj
+         D:\Subversion\netlib\deps\log4cpp\msvc10\log4cppLIB\Debug\log4cppD.lib
+     1>testmain.obj : warning LNK4075: 忽略“/EDITANDCONTINUE”(由于“/INCREMENTAL:NO”规范)
+         testMain.vcxproj -> D:\Subversion\netlib\deps\log4cpp\msvc10\testMain\.\Debug\testMain.exe
+       Manifest:
+         C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\mt.exe /nologo /verbose /outputresource:".\Debug/testMain.exe;#1" /manifest .\Debug\testMain.exe.intermediate.manifest
+       FinalizeBuildStatus:
+         正在删除文件“.\Debug\testMain.unsuccessfulbuild”。
+         正在对“.\Debug\testMain.lastbuildstate”执行 Touch 任务。
+     1>已完成生成项目“D:\Subversion\netlib\deps\log4cpp\msvc10\testMain\testMain.vcxproj”(build 个目标)的操作。
+
+生成成功。
+
+已用时间 00:00:02.18

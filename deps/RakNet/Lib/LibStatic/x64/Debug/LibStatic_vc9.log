@@ -1,0 +1,272 @@
+﻿生成启动时间为 2014/8/22 0:50:49。
+     1>项目“D:\Subversion\netlib\deps\RakNet\Lib\LibStatic\LibStatic_vc9.vcxproj”在节点 2 上(rebuild 个目标)。
+     1>_PrepareForClean:
+         正在删除文件“x64\Debug\LibStatic.lastbuildstate”。
+       InitializeBuildStatus:
+         正在创建“x64\Debug\LibStatic.unsuccessfulbuild”，因为已指定“AlwaysCreate”。
+       ClCompile:
+         D:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\x86_amd64\CL.exe /c /I./../../Source /I"./../../DependentExtensions/openssl-1.0.0d/include" /I./../../DependentExtensions /Zi /nologo /W4 /WX- /Od /D WIN32 /D _DEBUG /D _RAKNET_LIB /D _CRT_NONSTDC_NO_DEPRECATE /D _CRT_SECURE_NO_DEPRECATE /D _UNICODE /D UNICODE /Gm /RTC1 /MTd /GS- /fp:precise /Zc:wchar_t /Zc:forScope /GR- /Fo"x64\Debug\\" /Fd"D:\Subversion\netlib\deps\RakNet\Lib\x64\RakNet_VS2010_LibStatic_Debug_x64.pdb" /Gd /TP /errorReport:prompt ..\..\Source\_FindFirst.cpp ..\..\Source\Base64Encoder.cpp ..\..\Source\BitStream.cpp ..\..\Source\CCRakNetSlidingWindow.cpp ..\..\Source\CCRakNetUDT.cpp ..\..\Source\CheckSum.cpp ..\..\Source\CloudClient.cpp ..\..\Source\CloudCommon.cpp ..\..\Source\CloudServer.cpp ..\..\Source\CommandParserInterface.cpp ..\..\Source\ConnectionGraph2.cpp ..\..\Source\ConsoleServer.cpp ..\..\Source\DataCompressor.cpp ..\..\Source\DirectoryDeltaTransfer.cpp ..\..\Source\DR_SHA1.cpp ..\..\Source\DS_BytePool.cpp ..\..\Source\DS_ByteQueue.cpp ..\..\Source\DS_HuffmanEncodingTree.cpp ..\..\Source\DS_Table.cpp ..\..\Source\DynDNS.cpp ..\..\Source\EmailSender.cpp ..\..\Source\EpochTimeToString.cpp ..\..\Source\FileList.cpp ..\..\Source\FileListTransfer.cpp ..\..\Source\FileOperations.cpp ..\..\Source\FormatString.cpp ..\..\Source\FullyConnectedMesh2.cpp ..\..\Source\Getche.cpp ..\..\Source\Gets.cpp ..\..\Source\GetTime.cpp ..\..\Source\gettimeofday.cpp ..\..\Source\GridSectorizer.cpp ..\..\Source\HTTPConnection.cpp ..\..\Source\HTTPConnection2.cpp ..\..\Source\IncrementalReadInterface.cpp ..\..\Source\Itoa.cpp ..\..\Source\LinuxStrings.cpp ..\..\Source\LocklessTypes.cpp ..\..\Source\LogCommandParser.cpp ..\..\Source\MessageFilter.cpp ..\..\Source\NatPunchthroughClient.cpp ..\..\Source\NatPunchthroughServer.cpp ..\..\Source\NatTypeDetectionClient.cpp ..\..\Source\NatTypeDetectionCommon.cpp ..\..\Source\NatTypeDetectionServer.cpp ..\..\Source\NetworkIDManager.cpp ..\..\Source\NetworkIDObject.cpp ..\..\Source\PacketConsoleLogger.cpp ..\..\Source\PacketFileLogger.cpp ..\..\Source\PacketizedTCP.cpp ..\..\Source\PacketLogger.cpp ..\..\Source\PacketOutputWindowLogger.cpp ..\..\Source\PluginInterface2.cpp ..\..\Source\PS4Includes.cpp ..\..\Source\Rackspace.cpp ..\..\Source\RakMemoryOverride.cpp ..\..\Source\RakNetCommandParser.cpp ..\..\Source\RakNetSocket.cpp ..\..\Source\RakNetSocket2.cpp ..\..\Source\RakNetSocket2_360_720.cpp ..\..\Source\RakNetSocket2_Berkley.cpp ..\..\Source\RakNetSocket2_Berkley_NativeClient.cpp ..\..\Source\RakNetSocket2_NativeClient.cpp ..\..\Source\RakNetSocket2_PS3_PS4.cpp ..\..\Source\RakNetSocket2_PS4.cpp ..\..\Source\RakNetSocket2_Vita.cpp ..\..\Source\RakNetSocket2_Windows_Linux.cpp ..\..\Source\RakNetSocket2_Windows_Linux_360.cpp ..\..\Source\RakNetSocket2_WindowsStore8.cpp ..\..\Source\RakNetStatistics.cpp ..\..\Source\RakNetTransport2.cpp ..\..\Source\RakNetTypes.cpp ..\..\Source\RakPeer.cpp ..\..\Source\RakSleep.cpp ..\..\Source\RakString.cpp ..\..\Source\RakThread.cpp ..\..\Source\RakWString.cpp ..\..\Source\Rand.cpp ..\..\Source\RandSync.cpp ..\..\Source\ReadyEvent.cpp ..\..\Source\RelayPlugin.cpp ..\..\Source\ReliabilityLayer.cpp ..\..\Source\ReplicaManager3.cpp ..\..\Source\Router2.cpp ..\..\Source\RPC4Plugin.cpp ..\..\Source\SecureHandshake.cpp ..\..\Source\SendToThread.cpp ..\..\Source\SignaledEvent.cpp ..\..\Source\SimpleMutex.cpp ..\..\Source\SocketLayer.cpp ..\..\Source\StatisticsHistory.cpp ..\..\Source\StringCompressor.cpp ..\..\Source\StringTable.cpp ..\..\Source\SuperFastHash.cpp ..\..\Source\TableSerializer.cpp ..\..\Source\TCPInterface.cpp ..\..\Source\TeamBalancer.cpp ..\..\Source\TeamManager.cpp ..\..\Source\TelnetTransport.cpp ..\..\Source\ThreadsafePacketLogger.cpp ..\..\Source\TwoWayAuthentication.cpp ..\..\Source\UDPForwarder.cpp ..\..\Source\UDPProxyClient.cpp ..\..\Source\UDPProxyCoordinator.cpp ..\..\Source\UDPProxyServer.cpp ..\..\Source\VariableDeltaSerializer.cpp ..\..\Source\VariableListDeltaTracker.cpp ..\..\Source\VariadicSQLParser.cpp ..\..\Source\VitaIncludes.cpp ..\..\Source\WSAStartupSingleton.cpp
+         WSAStartupSingleton.cpp
+         VitaIncludes.cpp
+         VariadicSQLParser.cpp
+         VariableListDeltaTracker.cpp
+         VariableDeltaSerializer.cpp
+         UDPProxyServer.cpp
+         UDPProxyCoordinator.cpp
+         UDPProxyClient.cpp
+         UDPForwarder.cpp
+         TwoWayAuthentication.cpp
+     1>D:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\xlocale(323): warning C4530: 使用了 C++ 异常处理程序，但未启用展开语义。请指定 /EHsc
+         ThreadsafePacketLogger.cpp
+         TelnetTransport.cpp
+         TeamManager.cpp
+         TeamBalancer.cpp
+         TCPInterface.cpp
+         TableSerializer.cpp
+         SuperFastHash.cpp
+         StringTable.cpp
+         StringCompressor.cpp
+         StatisticsHistory.cpp
+         Generating Code...
+         Compiling...
+         SocketLayer.cpp
+     1>D:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\xlocale(323): warning C4530: 使用了 C++ 异常处理程序，但未启用展开语义。请指定 /EHsc
+         SimpleMutex.cpp
+         SignaledEvent.cpp
+         SendToThread.cpp
+         SecureHandshake.cpp
+         RPC4Plugin.cpp
+         Router2.cpp
+         ReplicaManager3.cpp
+         ReliabilityLayer.cpp
+     1>D:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\xlocale(323): warning C4530: 使用了 C++ 异常处理程序，但未启用展开语义。请指定 /EHsc
+         RelayPlugin.cpp
+         ReadyEvent.cpp
+         RandSync.cpp
+         Rand.cpp
+         RakWString.cpp
+         RakThread.cpp
+         RakString.cpp
+     1>..\..\Source\RakString.cpp(475): warning C4267: “参数”: 从“size_t”转换到“int”，可能丢失数据
+     1>..\..\Source\RakString.cpp(499): warning C4267: “参数”: 从“size_t”转换到“int”，可能丢失数据
+     1>..\..\Source\RakString.cpp(516): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
+     1>..\..\Source\RakString.cpp(665): warning C4267: “参数”: 从“size_t”转换到“unsigned int”，可能丢失数据
+     1>..\..\Source\RakString.cpp(696): warning C4267: “参数”: 从“size_t”转换到“unsigned int”，可能丢失数据
+         RakSleep.cpp
+         RakPeer.cpp
+     1>D:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\xlocale(323): warning C4530: 使用了 C++ 异常处理程序，但未启用展开语义。请指定 /EHsc
+     1>..\..\Source\RakPeer.cpp(429): warning C4018: “<”: 有符号/无符号不匹配
+     1>..\..\Source\RakPeer.cpp(577): warning C4018: “<”: 有符号/无符号不匹配
+     1>..\..\Source\RakPeer.cpp(622): warning C4018: “<”: 有符号/无符号不匹配
+     1>..\..\Source\RakPeer.cpp(728): warning C4018: “<”: 有符号/无符号不匹配
+     1>..\..\Source\RakPeer.cpp(733): warning C4018: “<”: 有符号/无符号不匹配
+         RakNetTypes.cpp
+         RakNetTransport2.cpp
+         Generating Code...
+         Compiling...
+         RakNetStatistics.cpp
+         RakNetSocket2_WindowsStore8.cpp
+         RakNetSocket2_Windows_Linux_360.cpp
+         RakNetSocket2_Windows_Linux.cpp
+         RakNetSocket2_Vita.cpp
+         RakNetSocket2_PS4.cpp
+         RakNetSocket2_PS3_PS4.cpp
+         RakNetSocket2_NativeClient.cpp
+         RakNetSocket2_Berkley_NativeClient.cpp
+         RakNetSocket2_Berkley.cpp
+         RakNetSocket2_360_720.cpp
+         RakNetSocket2.cpp
+     1>..\..\Source\RakNetSocket2.cpp(381): warning C4310: 类型转换截断常量值
+         RakNetSocket.cpp
+         RakNetCommandParser.cpp
+         RakMemoryOverride.cpp
+         Rackspace.cpp
+         PS4Includes.cpp
+         PluginInterface2.cpp
+         PacketOutputWindowLogger.cpp
+         PacketLogger.cpp
+         Generating Code...
+         Compiling...
+         PacketizedTCP.cpp
+         PacketFileLogger.cpp
+         PacketConsoleLogger.cpp
+         NetworkIDObject.cpp
+         NetworkIDManager.cpp
+         NatTypeDetectionServer.cpp
+         NatTypeDetectionCommon.cpp
+         NatTypeDetectionClient.cpp
+         NatPunchthroughServer.cpp
+     1>..\..\Source\NatPunchthroughServer.cpp(246): warning C4018: “<”: 有符号/无符号不匹配
+         NatPunchthroughClient.cpp
+         MessageFilter.cpp
+         LogCommandParser.cpp
+         LocklessTypes.cpp
+         LinuxStrings.cpp
+         Itoa.cpp
+         IncrementalReadInterface.cpp
+         HTTPConnection2.cpp
+     1>..\..\Source\HTTPConnection2.cpp(159): warning C4267: “参数”: 从“size_t”转换到“unsigned int”，可能丢失数据
+     1>..\..\Source\HTTPConnection2.cpp(338): warning C4244: “=”: 从“__int64”转换到“int”，可能丢失数据
+     1>..\..\Source\HTTPConnection2.cpp(377): warning C4244: “初始化”: 从“__int64”转换到“int”，可能丢失数据
+     1>..\..\Source\HTTPConnection2.cpp(572): warning C4244: “=”: 从“__int64”转换到“int”，可能丢失数据
+         HTTPConnection.cpp
+         GridSectorizer.cpp
+         gettimeofday.cpp
+         Generating Code...
+         Compiling...
+         GetTime.cpp
+         Gets.cpp
+         Getche.cpp
+         FullyConnectedMesh2.cpp
+         FormatString.cpp
+         FileOperations.cpp
+         FileListTransfer.cpp
+         FileList.cpp
+         EpochTimeToString.cpp
+         EmailSender.cpp
+         DynDNS.cpp
+         DS_Table.cpp
+         DS_HuffmanEncodingTree.cpp
+         DS_ByteQueue.cpp
+         DS_BytePool.cpp
+         DR_SHA1.cpp
+     1>D:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\xlocale(323): warning C4530: 使用了 C++ 异常处理程序，但未启用展开语义。请指定 /EHsc
+         DirectoryDeltaTransfer.cpp
+         DataCompressor.cpp
+         ConsoleServer.cpp
+         ConnectionGraph2.cpp
+         Generating Code...
+         Compiling...
+         CommandParserInterface.cpp
+         CloudServer.cpp
+         CloudCommon.cpp
+         CloudClient.cpp
+         CheckSum.cpp
+         CCRakNetUDT.cpp
+         CCRakNetSlidingWindow.cpp
+         BitStream.cpp
+         Base64Encoder.cpp
+         _FindFirst.cpp
+         Generating Code...
+     1>C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\Microsoft.CppBuild.targets(1151,5): warning MSB8012: TargetPath(D:\Subversion\netlib\deps\RakNet\Lib\x64\LibStatic.lib) 与 Library 的 OutputFile 属性值(D:\Subversion\netlib\deps\RakNet\Lib\x64\RakNet_VS2010_LibStatic_Debug_x64.lib)不匹配。这可能导致项目生成不正确。若要更正此问题，请确保 $(OutDir)、$(TargetName) 和 $(TargetExt) 属性值与 %(Lib.OutputFile) 中指定的值匹配。
+     1>C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\Microsoft.CppBuild.targets(1153,5): warning MSB8012: TargetName(LibStatic) 与 Library 的 OutputFile 属性值(RakNet_VS2010_LibStatic_Debug_x64)不匹配。这可能导致项目生成不正确。若要更正此问题，请确保 $(OutDir)、$(TargetName) 和 $(TargetExt) 属性值与 %(Lib.OutputFile) 中指定的值匹配。
+       Lib:
+         D:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\x86_amd64\Lib.exe /OUT:"D:\Subversion\netlib\deps\RakNet\Lib\x64\RakNet_VS2010_LibStatic_Debug_x64.lib" /NOLOGO /NODEFAULTLIB:"LIBCD.lib LIBCMTD.lib MSVCRT.lib" x64\Debug\_FindFirst.obj
+         x64\Debug\Base64Encoder.obj
+         x64\Debug\BitStream.obj
+         x64\Debug\CCRakNetSlidingWindow.obj
+         x64\Debug\CCRakNetUDT.obj
+         x64\Debug\CheckSum.obj
+         x64\Debug\CloudClient.obj
+         x64\Debug\CloudCommon.obj
+         x64\Debug\CloudServer.obj
+         x64\Debug\CommandParserInterface.obj
+         x64\Debug\ConnectionGraph2.obj
+         x64\Debug\ConsoleServer.obj
+         x64\Debug\DataCompressor.obj
+         x64\Debug\DirectoryDeltaTransfer.obj
+         x64\Debug\DR_SHA1.obj
+         x64\Debug\DS_BytePool.obj
+         x64\Debug\DS_ByteQueue.obj
+         x64\Debug\DS_HuffmanEncodingTree.obj
+         x64\Debug\DS_Table.obj
+         x64\Debug\DynDNS.obj
+         x64\Debug\EmailSender.obj
+         x64\Debug\EpochTimeToString.obj
+         x64\Debug\FileList.obj
+         x64\Debug\FileListTransfer.obj
+         x64\Debug\FileOperations.obj
+         x64\Debug\FormatString.obj
+         x64\Debug\FullyConnectedMesh2.obj
+         x64\Debug\Getche.obj
+         x64\Debug\Gets.obj
+         x64\Debug\GetTime.obj
+         x64\Debug\gettimeofday.obj
+         x64\Debug\GridSectorizer.obj
+         x64\Debug\HTTPConnection.obj
+         x64\Debug\HTTPConnection2.obj
+         x64\Debug\IncrementalReadInterface.obj
+         x64\Debug\Itoa.obj
+         x64\Debug\LinuxStrings.obj
+         x64\Debug\LocklessTypes.obj
+         x64\Debug\LogCommandParser.obj
+         x64\Debug\MessageFilter.obj
+         x64\Debug\NatPunchthroughClient.obj
+         x64\Debug\NatPunchthroughServer.obj
+         x64\Debug\NatTypeDetectionClient.obj
+         x64\Debug\NatTypeDetectionCommon.obj
+         x64\Debug\NatTypeDetectionServer.obj
+         x64\Debug\NetworkIDManager.obj
+         x64\Debug\NetworkIDObject.obj
+         x64\Debug\PacketConsoleLogger.obj
+         x64\Debug\PacketFileLogger.obj
+         x64\Debug\PacketizedTCP.obj
+         x64\Debug\PacketLogger.obj
+         x64\Debug\PacketOutputWindowLogger.obj
+         x64\Debug\PluginInterface2.obj
+         x64\Debug\PS4Includes.obj
+         x64\Debug\Rackspace.obj
+         x64\Debug\RakMemoryOverride.obj
+         x64\Debug\RakNetCommandParser.obj
+         x64\Debug\RakNetSocket.obj
+         x64\Debug\RakNetSocket2.obj
+         x64\Debug\RakNetSocket2_360_720.obj
+         x64\Debug\RakNetSocket2_Berkley.obj
+         x64\Debug\RakNetSocket2_Berkley_NativeClient.obj
+         x64\Debug\RakNetSocket2_NativeClient.obj
+         x64\Debug\RakNetSocket2_PS3_PS4.obj
+         x64\Debug\RakNetSocket2_PS4.obj
+         x64\Debug\RakNetSocket2_Vita.obj
+         x64\Debug\RakNetSocket2_Windows_Linux.obj
+         x64\Debug\RakNetSocket2_Windows_Linux_360.obj
+         x64\Debug\RakNetSocket2_WindowsStore8.obj
+         x64\Debug\RakNetStatistics.obj
+         x64\Debug\RakNetTransport2.obj
+         x64\Debug\RakNetTypes.obj
+         x64\Debug\RakPeer.obj
+         x64\Debug\RakSleep.obj
+         x64\Debug\RakString.obj
+         x64\Debug\RakThread.obj
+         x64\Debug\RakWString.obj
+         x64\Debug\Rand.obj
+         x64\Debug\RandSync.obj
+         x64\Debug\ReadyEvent.obj
+         x64\Debug\RelayPlugin.obj
+         x64\Debug\ReliabilityLayer.obj
+         x64\Debug\ReplicaManager3.obj
+         x64\Debug\Router2.obj
+         x64\Debug\RPC4Plugin.obj
+         x64\Debug\SecureHandshake.obj
+         x64\Debug\SendToThread.obj
+         x64\Debug\SignaledEvent.obj
+         x64\Debug\SimpleMutex.obj
+         x64\Debug\SocketLayer.obj
+         x64\Debug\StatisticsHistory.obj
+         x64\Debug\StringCompressor.obj
+         x64\Debug\StringTable.obj
+         x64\Debug\SuperFastHash.obj
+         x64\Debug\TableSerializer.obj
+         x64\Debug\TCPInterface.obj
+         x64\Debug\TeamBalancer.obj
+         x64\Debug\TeamManager.obj
+         x64\Debug\TelnetTransport.obj
+         x64\Debug\ThreadsafePacketLogger.obj
+         x64\Debug\TwoWayAuthentication.obj
+         x64\Debug\UDPForwarder.obj
+         x64\Debug\UDPProxyClient.obj
+         x64\Debug\UDPProxyCoordinator.obj
+         x64\Debug\UDPProxyServer.obj
+         x64\Debug\VariableDeltaSerializer.obj
+         x64\Debug\VariableListDeltaTracker.obj
+         x64\Debug\VariadicSQLParser.obj
+         x64\Debug\VitaIncludes.obj
+         x64\Debug\WSAStartupSingleton.obj
+         LibStatic_vc9.vcxproj -> D:\Subversion\netlib\deps\RakNet\Lib\x64\LibStatic.lib
+       FinalizeBuildStatus:
+         正在删除文件“x64\Debug\LibStatic.unsuccessfulbuild”。
+         正在对“x64\Debug\LibStatic.lastbuildstate”执行 Touch 任务。
+     1>已完成生成项目“D:\Subversion\netlib\deps\RakNet\Lib\LibStatic\LibStatic_vc9.vcxproj”(rebuild 个目标)的操作。
+
+生成成功。
+
+已用时间 00:01:13.57

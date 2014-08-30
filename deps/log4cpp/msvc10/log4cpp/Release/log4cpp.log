@@ -1,0 +1,192 @@
+﻿生成启动时间为 2014/7/26 15:27:32。
+     1>项目“D:\Subversion\netlib\deps\log4cpp\msvc10\log4cpp\log4cpp.vcxproj”在节点 2 上(build 个目标)。
+     1>InitializeBuildStatus:
+         正在创建“Release\log4cpp.unsuccessfulbuild”，因为已指定“AlwaysCreate”。
+       CustomBuild:
+         Performing Custom Build Tools
+         Setting environment for using Microsoft Visual Studio 2010 x86 tools.
+       ClCompile:
+         D:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /I../../include /nologo /W3 /WX- /O2 /Oy- /D WIN32 /D NDEBUG /D _WINDOWS /D _DLL /D _USRDLL /D LOG4CPP_HAS_DLL /D LOG4CPP_BUILD_DLL /D _WINDLL /D _MBCS /Gm- /EHsc /MD /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Release\\" /Fd"Release\vc100.pdb" /Gd /TP /analyze- /errorReport:prompt ..\..\src\AbortAppender.cpp ..\..\src\Appender.cpp ..\..\src\AppendersFactory.cpp ..\..\src\AppenderSkeleton.cpp ..\..\src\BasicConfigurator.cpp ..\..\src\BasicLayout.cpp ..\..\src\BufferingAppender.cpp ..\..\src\Category.cpp ..\..\src\CategoryStream.cpp ..\..\src\Configurator.cpp ..\..\src\DllMain.cpp ..\..\src\DummyThreads.cpp ..\..\src\FactoryParams.cpp ..\..\src\FileAppender.cpp ..\..\src\Filter.cpp ..\..\src\FixedContextCategory.cpp ..\..\src\HierarchyMaintainer.cpp ..\..\src\IdsaAppender.cpp ..\..\src\LayoutAppender.cpp ..\..\src\LayoutsFactory.cpp ..\..\src\LevelEvaluator.cpp ..\..\src\Localtime.cpp ..\..\src\LoggingEvent.cpp ..\..\src\Manipulator.cpp ..\..\src\MSThreads.cpp ..\..\src\NDC.cpp ..\..\src\NTEventLogAppender.cpp ..\..\src\OmniThreads.cpp ..\..\src\OstreamAppender.cpp ..\..\src\PassThroughLayout.cpp ..\..\src\PatternLayout.cpp ..\..\src\PortabilityImpl.cpp ..\..\src\Priority.cpp ..\..\src\Properties.cpp ..\..\src\PropertyConfigurator.cpp ..\..\src\PropertyConfiguratorImpl.cpp ..\..\src\PThreads.cpp ..\..\src\RemoteSyslogAppender.cpp ..\..\src\RollingFileAppender.cpp ..\..\src\SimpleConfigurator.cpp ..\..\src\SimpleLayout.cpp ..\..\src\SmtpAppender.cpp ..\..\src\StringQueueAppender.cpp ..\..\src\StringUtil.cpp ..\..\src\SyslogAppender.cpp ..\..\src\TimeStamp.cpp ..\..\src\TriggeringEventEvaluatorFactory.cpp ..\..\src\Win32DebugAppender.cpp
+         AbortAppender.cpp
+         Appender.cpp
+         AppendersFactory.cpp
+         AppenderSkeleton.cpp
+         BasicConfigurator.cpp
+     1>..\..\src\BasicConfigurator.cpp(29): warning C4996: 'dup': The POSIX name for this item is deprecated. Instead, use the ISO C++ conformant name: _dup. See online help for details.
+                 D:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\io.h(304) : 参见“dup”的声明
+     1>..\..\src\BasicConfigurator.cpp(29): warning C4996: 'fileno': The POSIX name for this item is deprecated. Instead, use the ISO C++ conformant name: _fileno. See online help for details.
+                 D:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\stdio.h(723) : 参见“fileno”的声明
+         BasicLayout.cpp
+         BufferingAppender.cpp
+         Category.cpp
+         CategoryStream.cpp
+         Configurator.cpp
+     1>../../include\log4cpp/Configurator.hh(21): warning C4275: 非 dll 接口 class“std::runtime_error”用作 dll 接口 class“log4cpp::ConfigureFailure”的基
+                 D:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\stdexcept(158) : 参见“std::runtime_error”的声明
+                 ../../include\log4cpp/Configurator.hh(21) : 参见“log4cpp::ConfigureFailure”的声明
+         DllMain.cpp
+         DummyThreads.cpp
+         FactoryParams.cpp
+         FileAppender.cpp
+     1>..\..\src\FileAppender.cpp(37): warning C4996: 'open': The POSIX name for this item is deprecated. Instead, use the ISO C++ conformant name: _open. See online help for details.
+                 D:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\io.h(312) : 参见“open”的声明
+     1>..\..\src\FileAppender.cpp(54): warning C4996: 'close': The POSIX name for this item is deprecated. Instead, use the ISO C++ conformant name: _close. See online help for details.
+                 D:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\io.h(302) : 参见“close”的声明
+     1>..\..\src\FileAppender.cpp(81): warning C4996: 'write': The POSIX name for this item is deprecated. Instead, use the ISO C++ conformant name: _write. See online help for details.
+                 D:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\io.h(318) : 参见“write”的声明
+     1>..\..\src\FileAppender.cpp(88): warning C4996: 'open': The POSIX name for this item is deprecated. Instead, use the ISO C++ conformant name: _open. See online help for details.
+                 D:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\io.h(312) : 参见“open”的声明
+     1>..\..\src\FileAppender.cpp(93): warning C4996: 'close': The POSIX name for this item is deprecated. Instead, use the ISO C++ conformant name: _close. See online help for details.
+                 D:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\io.h(302) : 参见“close”的声明
+         Filter.cpp
+         FixedContextCategory.cpp
+         HierarchyMaintainer.cpp
+         IdsaAppender.cpp
+         LayoutAppender.cpp
+         LayoutsFactory.cpp
+         正在生成代码...
+         正在编译...
+         LevelEvaluator.cpp
+         Localtime.cpp
+         LoggingEvent.cpp
+         Manipulator.cpp
+         MSThreads.cpp
+     1>..\..\src\MSThreads.cpp(17): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 D:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\stdio.h(371) : 参见“sprintf”的声明
+         NDC.cpp
+         NTEventLogAppender.cpp
+         OmniThreads.cpp
+         OstreamAppender.cpp
+         PassThroughLayout.cpp
+         PatternLayout.cpp
+     1>../../include\log4cpp/Configurator.hh(21): warning C4275: 非 dll 接口 class“std::runtime_error”用作 dll 接口 class“log4cpp::ConfigureFailure”的基
+                 D:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\stdexcept(158) : 参见“std::runtime_error”的声明
+                 ../../include\log4cpp/Configurator.hh(21) : 参见“log4cpp::ConfigureFailure”的声明
+         PortabilityImpl.cpp
+         Priority.cpp
+         Properties.cpp
+     1>..\..\src\Properties.cpp(138): warning C4996: 'getenv': This function or variable may be unsafe. Consider using _dupenv_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 D:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\stdlib.h(433) : 参见“getenv”的声明
+         PropertyConfigurator.cpp
+     1>../../include\log4cpp/Configurator.hh(21): warning C4275: 非 dll 接口 class“std::runtime_error”用作 dll 接口 class“log4cpp::ConfigureFailure”的基
+                 D:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\stdexcept(158) : 参见“std::runtime_error”的声明
+                 ../../include\log4cpp/Configurator.hh(21) : 参见“log4cpp::ConfigureFailure”的声明
+         PropertyConfiguratorImpl.cpp
+     1>../../include\log4cpp/Configurator.hh(21): warning C4275: 非 dll 接口 class“std::runtime_error”用作 dll 接口 class“log4cpp::ConfigureFailure”的基
+                 D:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\stdexcept(158) : 参见“std::runtime_error”的声明
+                 ../../include\log4cpp/Configurator.hh(21) : 参见“log4cpp::ConfigureFailure”的声明
+         PThreads.cpp
+         RemoteSyslogAppender.cpp
+     1>..\..\src\RemoteSyslogAppender.cpp(140): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 D:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\stdio.h(371) : 参见“sprintf”的声明
+         RollingFileAppender.cpp
+     1>..\..\src\RollingFileAppender.cpp(41): warning C4244: “初始化”: 从“float”转换到“unsigned short”，可能丢失数据
+     1>..\..\src\RollingFileAppender.cpp(46): warning C4244: “=”: 从“float”转换到“unsigned short”，可能丢失数据
+     1>..\..\src\RollingFileAppender.cpp(62): warning C4996: 'close': The POSIX name for this item is deprecated. Instead, use the ISO C++ conformant name: _close. See online help for details.
+                 D:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\io.h(302) : 参见“close”的声明
+     1>..\..\src\RollingFileAppender.cpp(81): warning C4996: 'open': The POSIX name for this item is deprecated. Instead, use the ISO C++ conformant name: _open. See online help for details.
+                 D:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\io.h(312) : 参见“open”的声明
+     1>..\..\src\RollingFileAppender.cpp(86): warning C4996: 'lseek': The POSIX name for this item is deprecated. Instead, use the ISO C++ conformant name: _lseek. See online help for details.
+                 D:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\io.h(310) : 参见“lseek”的声明
+         SimpleConfigurator.cpp
+     1>../../include\log4cpp/Configurator.hh(21): warning C4275: 非 dll 接口 class“std::runtime_error”用作 dll 接口 class“log4cpp::ConfigureFailure”的基
+                 D:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\stdexcept(158) : 参见“std::runtime_error”的声明
+                 ../../include\log4cpp/Configurator.hh(21) : 参见“log4cpp::ConfigureFailure”的声明
+     1>..\..\src\SimpleConfigurator.cpp(109): warning C4996: 'dup': The POSIX name for this item is deprecated. Instead, use the ISO C++ conformant name: _dup. See online help for details.
+                 D:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\io.h(304) : 参见“dup”的声明
+     1>..\..\src\SimpleConfigurator.cpp(109): warning C4996: 'fileno': The POSIX name for this item is deprecated. Instead, use the ISO C++ conformant name: _fileno. See online help for details.
+                 D:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\stdio.h(723) : 参见“fileno”的声明
+     1>..\..\src\SimpleConfigurator.cpp(113): warning C4996: 'dup': The POSIX name for this item is deprecated. Instead, use the ISO C++ conformant name: _dup. See online help for details.
+                 D:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\io.h(304) : 参见“dup”的声明
+         正在生成代码...
+         正在编译...
+         SimpleLayout.cpp
+         SmtpAppender.cpp
+         StringQueueAppender.cpp
+         StringUtil.cpp
+     1>..\..\src\StringUtil.cpp(50): warning C4996: '_vsnprintf': This function or variable may be unsafe. Consider using _vsnprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 D:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\stdio.h(363) : 参见“_vsnprintf”的声明
+         SyslogAppender.cpp
+         TimeStamp.cpp
+     1>..\..\src\TimeStamp.cpp(38): warning C4244: “=”: 从“time_t”转换到“int”，可能丢失数据
+         TriggeringEventEvaluatorFactory.cpp
+         Win32DebugAppender.cpp
+         正在生成代码...
+         D:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /I../../include /nologo /W3 /WX- /O2 /Oy- /D WIN32 /D NDEBUG /D _WINDOWS /D _DLL /D _USRDLL /D LOG4CPP_HAS_DLL /D LOG4CPP_BUILD_DLL /D _WINDLL /D _MBCS /Gm- /EHsc /MD /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Release\\" /Fd"Release\vc100.pdb" /Gd /TC /analyze- /errorReport:prompt ..\..\src\snprintf.c
+         snprintf.c
+     1>..\..\src\snprintf.c(406): warning C4273: “vsnprintf”: dll 链接不一致
+                 D:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\stdio.h(354) : 参见“vsnprintf”的前一个定义
+     1>..\..\src\snprintf.c(529): warning C4996: 'vsnprintf': This function or variable may be unsafe. Consider using vsnprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 D:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\stdio.h(354) : 参见“vsnprintf”的声明
+     1>..\..\src\snprintf.c(859): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 D:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\stdio.h(371) : 参见“sprintf”的声明
+     1>..\..\src\snprintf.c(863): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 D:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\stdio.h(371) : 参见“sprintf”的声明
+     1>..\..\src\snprintf.c(864): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 D:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\stdio.h(371) : 参见“sprintf”的声明
+     1>..\..\src\snprintf.c(872): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 D:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\stdio.h(371) : 参见“sprintf”的声明
+     1>..\..\src\snprintf.c(873): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 D:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\stdio.h(371) : 参见“sprintf”的声明
+       Link:
+         D:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"Release\log4cpp.dll" /INCREMENTAL:NO /NOLOGO ws2_32.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /ManifestFile:"Release\log4cpp.dll.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /DEBUG /PDB:"D:\Subversion\netlib\deps\log4cpp\msvc10\log4cpp\Release\log4cpp.pdb" /SUBSYSTEM:WINDOWS /OPT:REF /OPT:ICF /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"Release\log4cpp.lib" /MACHINE:X86 /DLL Release\AbortAppender.obj
+         Release\Appender.obj
+         Release\AppendersFactory.obj
+         Release\AppenderSkeleton.obj
+         Release\BasicConfigurator.obj
+         Release\BasicLayout.obj
+         Release\BufferingAppender.obj
+         Release\Category.obj
+         Release\CategoryStream.obj
+         Release\Configurator.obj
+         Release\DllMain.obj
+         Release\DummyThreads.obj
+         Release\FactoryParams.obj
+         Release\FileAppender.obj
+         Release\Filter.obj
+         Release\FixedContextCategory.obj
+         Release\HierarchyMaintainer.obj
+         Release\IdsaAppender.obj
+         Release\LayoutAppender.obj
+         Release\LayoutsFactory.obj
+         Release\LevelEvaluator.obj
+         Release\Localtime.obj
+         Release\LoggingEvent.obj
+         Release\Manipulator.obj
+         Release\MSThreads.obj
+         Release\NDC.obj
+         Release\NTEventLogAppender.obj
+         Release\OmniThreads.obj
+         Release\OstreamAppender.obj
+         Release\PassThroughLayout.obj
+         Release\PatternLayout.obj
+         Release\PortabilityImpl.obj
+         Release\Priority.obj
+         Release\Properties.obj
+         Release\PropertyConfigurator.obj
+         Release\PropertyConfiguratorImpl.obj
+         Release\PThreads.obj
+         Release\RemoteSyslogAppender.obj
+         Release\RollingFileAppender.obj
+         Release\SimpleConfigurator.obj
+         Release\SimpleLayout.obj
+         Release\SmtpAppender.obj
+         Release\snprintf.obj
+         Release\StringQueueAppender.obj
+         Release\StringUtil.obj
+         Release\SyslogAppender.obj
+         Release\TimeStamp.obj
+         Release\TriggeringEventEvaluatorFactory.obj
+         Release\Win32DebugAppender.obj
+            正在创建库 Release\log4cpp.lib 和对象 Release\log4cpp.exp
+         log4cpp.vcxproj -> D:\Subversion\netlib\deps\log4cpp\msvc10\log4cpp\Release\log4cpp.dll
+       Manifest:
+         C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\mt.exe /nologo /verbose /outputresource:"Release\log4cpp.dll;#2" /manifest Release\log4cpp.dll.intermediate.manifest
+       FinalizeBuildStatus:
+         正在删除文件“Release\log4cpp.unsuccessfulbuild”。
+         正在对“Release\log4cpp.lastbuildstate”执行 Touch 任务。
+     1>已完成生成项目“D:\Subversion\netlib\deps\log4cpp\msvc10\log4cpp\log4cpp.vcxproj”(build 个目标)的操作。
+
+生成成功。
+
+已用时间 00:00:36.00
