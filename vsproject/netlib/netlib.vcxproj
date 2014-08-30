@@ -158,7 +158,7 @@
     <ClCompile>
       <WarningLevel>Level3</WarningLevel>
       <Optimization>Disabled</Optimization>
-      <AdditionalIncludeDirectories>$(SolutionDir)netlib;$(SolutionDir)..\Common;$(SolutionDir)..\TimerLib\inc;$(SolutionDir)..\NetLib\inc;$(SolutionDir)..\ThreadPoolLib\inc;$(SolutionDir)..\deps\tbb\include;$(SolutionDir)..\deps\raknet\source;$(SolutionDir)..\deps\pthread\include</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(SolutionDir)netlib;$(SolutionDir)..\Common;$(SolutionDir)..\TimerLib\inc;$(SolutionDir)..\NetLib\inc;$(SolutionDir)..\ThreadPoolLib\inc;$(SolutionDir)..\deps\boost\;$(SolutionDir)..\deps\tbb\include;$(SolutionDir)..\deps\raknet\source;$(SolutionDir)..\deps\pthread\include</AdditionalIncludeDirectories>
       <MultiProcessorCompilation>true</MultiProcessorCompilation>
       <PreprocessorDefinitions>WIN32;_WINDLL;DLL_EXPORTS;USE_RAKNET;_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
     </ClCompile>
@@ -223,6 +223,7 @@
     <ClCompile Include="..\..\netlib\src\RakNetUDPManager.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="..\..\Common\BoostHelper.h" />
     <ClInclude Include="..\..\Common\CircleBuffer.h" />
     <ClInclude Include="..\..\Common\MsgProcess.h" />
     <ClInclude Include="..\..\Common\MsgWrapper.h" />

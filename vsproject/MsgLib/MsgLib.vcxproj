@@ -147,7 +147,7 @@
       <WarningLevel>Level3</WarningLevel>
       <Optimization>Disabled</Optimization>
       <PreprocessorDefinitions>WIN32;_DEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>$(SolutionDir)\..\Common;$(SolutionDir)..\deps\tbb\include;$(SolutionDir)..\MsgLib\msg;$(SolutionDir)..\NetClient\inc;$(SolutionDir)..\deps\protobuf\src;$(SolutionDir)\..\TimerLib\inc;$(SolutionDir)\..\deps\pthread\include</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(SolutionDir)..\Common;$(SolutionDir)..\deps\tbb\include;$(SolutionDir)..\MsgLib\msg;$(SolutionDir)..\NetClient\inc;$(SolutionDir)..\deps\protobuf\src;$(SolutionDir)..\TimerLib\inc;$(SolutionDir)..\deps\pthread\include;$(SolutionDir)..\deps\boost\</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Windows</SubSystem>

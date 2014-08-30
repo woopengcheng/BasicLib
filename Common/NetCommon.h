@@ -4,6 +4,8 @@
 #include "tbb/concurrent_unordered_map.h"
 #include "tbb/concurrent_hash_map.h"
 #include "tbb/concurrent_queue.h"
+#include "BoostHelper.h"
+
 
 #ifdef WIN32
 #pragma warning(disable : 4710)
@@ -28,11 +30,11 @@ namespace Net
 #define DEFAULT_CIRCLE_BUFFER_SIZE    (DEFAULT_SOCKET_BUFFER_SIZE * 10)
 
 #define tbb_unordered_map tbb::concurrent_unordered_map 
-#define tbb_hash_map      tbb::concurrent_hash_map 
-	 
+#define tbb_hash_map      tbb::concurrent_hash_map  
+	  
 //5 ÍøÂç´íÎóÂë////////////////////////////////////////////////////////////////////////
-	const INT32	NET_ERROR_FAILURE = -1;
-	const INT32	NET_ERROR_SUCCESS = 0;
+const INT32	NET_ERROR_FAILURE = -1;
+const INT32	NET_ERROR_SUCCESS = 0;
 
 #ifdef WIN32
 	typedef INT32 SOCKET;

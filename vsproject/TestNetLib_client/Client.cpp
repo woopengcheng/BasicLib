@@ -7,15 +7,28 @@ INT32 Client::Init()
 		m_pNetReactor = new Net::NetReactorSelect;
 	}
 	m_pNetReactor->Init();
-	 
-	NetHandlerClient::Init("127.0.0.1" , 5555);
-	m_pNetReactor->AddNetHandler(this);
+
+	if (!m_pMsgProcess)
+	{
+		m_pMsgProcess = new TestMsgProcess();
+	}
+
+	if (!m_pNetHandlerClient)
+	{
+		m_pNetHandlerClient = Net::NetHandlerClientPtr(new Net::NetHandlerClient(new Net::ISession , m_pMsgProcess));
+	}
+
+	m_pNetHandlerClient->Init("127.0.0.1" , 5555);
+	m_pNetReactor->AddNetHandler(m_pNetHandlerClient);
 
 	return TRUE;
 }
 
 INT32 Client::Cleanup()
 {
+	SAFE_DELETE(m_pMsgProcess);
+	SAFE_DELETE(m_pNetReactor);
+
 	return TRUE;
 }
 
@@ -29,9 +42,20 @@ INT32 Client::Update()
 		((Net::MsgHeader*)pBuf)->unMsgID = 0;
 		((Net::MsgHeader*)pBuf)->unMsgLength = 6+ sizeof(Net::MsgHeader);
 		memcpy(pBuf + sizeof(Net::MsgHeader) , "asdfa" , 6);
-		SendMsg(pBuf , 6 + sizeof(Net::MsgHeader));
+
+		if (m_pNetHandlerClient)
+		{
+			m_pNetHandlerClient->SendMsg(pBuf , 6 + sizeof(Net::MsgHeader));
+		}
 		Timer::TimerHelper::sleep(1); 
 	}
 	return TRUE;
 }
 
+
+INT32 TestMsgProcess::Process( UINT32 unMsgID, const char* pBuffer, UINT32 unLength )
+{
+	printf("%s\n" , pBuffer);
+
+	return TRUE;
+}

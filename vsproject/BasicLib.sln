@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 11.00
 # Visual Studio 2010
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "NetLib", "netlib\netlib.vcxproj", "{240BD6CD-4B59-4F6B-84FF-B56DF0AB6CBE}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "netlib", "netlib\netlib.vcxproj", "{240BD6CD-4B59-4F6B-84FF-B56DF0AB6CBE}"
 	ProjectSection(ProjectDependencies) = postProject
 		{0CBB893E-CB03-4CB2-AF12-95DE2575FB09} = {0CBB893E-CB03-4CB2-AF12-95DE2575FB09}
 		{58667643-3B60-4AD2-9436-E80484CD5B17} = {58667643-3B60-4AD2-9436-E80484CD5B17}
@@ -33,6 +33,7 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "TimerLib", "TimerLib\TimerL
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "common", "common", "{7C1DCBD7-A74F-4672-855F-153455905EB6}"
 	ProjectSection(SolutionItems) = preProject
+		..\Common\BoostHelper.h = ..\Common\BoostHelper.h
 		..\Common\ClassTypeInterface.h = ..\Common\ClassTypeInterface.h
 		..\Common\Common.h = ..\Common\Common.h
 		..\Common\CommonAssert.h = ..\Common\CommonAssert.h

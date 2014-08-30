@@ -173,13 +173,13 @@
       <WarningLevel>Level3</WarningLevel>
       <Optimization>Disabled</Optimization>
       <PreprocessorDefinitions>WIN32;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>$(SolutionDir)TestNetLib;$(SolutionDir)..\Common;$(SolutionDir)..\LogLib\;$(SolutionDir)..\TimerLib\inc;$(SolutionDir)..\NetLib\inc;$(SolutionDir)..\ThreadPoolLib\inc;$(SolutionDir)..\deps\raknet\source;$(SolutionDir)..\deps\pthread\include;$(SolutionDir)..\deps\log4cpp\include;$(SolutionDir)..\deps\log4cplus\include;$(SolutionDir)..\deps\tbb\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(SolutionDir)TestNetLib;$(SolutionDir)..\Common;$(SolutionDir)..\LogLib\;$(SolutionDir)..\TimerLib\inc;$(SolutionDir)..\NetLib\inc;$(SolutionDir)..\ThreadPoolLib\inc;$(SolutionDir)..\deps\raknet\source;$(SolutionDir)..\deps\boost;$(SolutionDir)..\deps\pthread\include;$(SolutionDir)..\deps\log4cpp\include;$(SolutionDir)..\deps\log4cplus\include;$(SolutionDir)..\deps\tbb\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
-      <AdditionalDependencies>ws2_32.lib;TimerLib_vs2010.lib;pthreadVC2.lib;LogLib_vs2010.lib;Log4Cpp.lib;log4cplusUD.lib;ThreadPoolLib_VS2010.lib;RakNet_VS2010_LibStatic_Debug_x64.lib;tbb_debug.lib;netlib_vs2010.lib;%(AdditionalDependencies)</AdditionalDependencies>
-      <AdditionalLibraryDirectories>$(SolutionDir)..\lib\$(Platform)\$(Configuration)\;$(SolutionDir)..\deps\raknet\lib\x64;$(SolutionDir)..\deps\pthread\lib\x64;$(SolutionDir)..\deps\tbb\lib\intel64\vc10;$(SolutionDir)..\deps\gperftools-2.1\Debug;$(SolutionDir)..\deps\log4cpp\msvc10\log4cpp\Debug\x64;$(SolutionDir)..\deps\log4cplus\msvc10\x64\bin.Debug_Unicode</AdditionalLibraryDirectories>
+      <AdditionalDependencies>libboost_system-vc100-mt-sgd-1_56.lib;ws2_32.lib;TimerLib_vs2010.lib;pthreadVC2.lib;LogLib_vs2010.lib;Log4Cpp.lib;log4cplusUD.lib;ThreadPoolLib_VS2010.lib;RakNet_VS2010_LibStatic_Debug_x64.lib;tbb_debug.lib;netlib_vs2010.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>$(SolutionDir)..\lib\$(Platform)\$(Configuration)\;$(SolutionDir)..\deps\boost\lib;$(SolutionDir)..\deps\raknet\lib\x64;$(SolutionDir)..\deps\pthread\lib\x64;$(SolutionDir)..\deps\tbb\lib\intel64\vc10;$(SolutionDir)..\deps\gperftools-2.1\Debug;$(SolutionDir)..\deps\log4cpp\msvc10\log4cpp\Debug\x64;$(SolutionDir)..\deps\log4cplus\msvc10\x64\bin.Debug_Unicode</AdditionalLibraryDirectories>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">

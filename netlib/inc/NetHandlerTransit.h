@@ -31,6 +31,8 @@ namespace Net
 		Util::CircleBuffer    m_objSendBuf;
 		Util::CircleBuffer    m_objRecvBuf;
 	}; 
+
+	DECLARE_BOOST_POINTERS(NetHandlerTransit);
 }
 
 #endif

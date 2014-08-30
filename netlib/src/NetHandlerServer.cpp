@@ -14,4 +14,9 @@ namespace Net
 		return TRUE;
 	}
 
+	INT32 NetHandlerServer::OnClose()
+	{ 
+		return closesocket(GetSocket());
+	}
+
 }

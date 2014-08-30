@@ -5,17 +5,19 @@ namespace Net
 {   
 	 INT32  NetHandlerClient::HandleMsg( UINT32 unMsgID, const char* pBuffer, UINT32 unLength )
 	{
-		return TRUE;
+		return m_pMsgProcess->Process(unMsgID , pBuffer , unLength);
 	}
 
 	 INT32 NetHandlerClient::Init( const char* ip,int port )
 	 { 
+		 SOCKET socket = ::socket(AF_INET , SOCK_STREAM , 0);
+		 SetSocket(socket);
 		 return Connect(ip , port);
 	 }
 
 	 INT32 NetHandlerClient::Cleanup()
-	 {
-
+	 { 
+		 closesocket(GetSocket());
 		 return TRUE;
 	 }
 
@@ -39,6 +41,11 @@ namespace Net
 		 } 
 
 		 return TRUE;
+	 }
+
+	 INT32 NetHandlerClient::OnClose()
+	 {
+		 return Cleanup();
 	 }
 
 }

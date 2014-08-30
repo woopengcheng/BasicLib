@@ -1,18 +1,25 @@
 #include "NetReactorSelect.h"
-#include "ServerSession.h"
+#include "ISession.h"
 #include "NetHandlerClient.h"
 #include "TimerHelp.h"
+#include "MsgProcess.h"
 
-class Client : public Net::NetHandlerClient
+class TestMsgProcess : public Net::MsgProcess
+{
+public:
+	virtual INT32 Process(UINT32 unMsgID, const char* pBuffer, UINT32 unLength);
+};
+
+class Client  
 {
 public:
 	Client()
-		: m_pNetReactor(new Net::NetReactorSelect)
-		, NetHandlerClient(new Net::ServerSession)
+		: m_pNetReactor(new Net::NetReactorSelect)  
+		, m_pMsgProcess(NULL)
 	{
 
 	}
-	~Client(){ SAFE_DELETE(m_pNetReactor); }
+	~Client(){  }
 
 public:
 	virtual INT32  Init();
@@ -20,5 +27,8 @@ public:
 	virtual INT32  Update(); 
 
 private:
-	Net::INetReactor *  m_pNetReactor;
+	Net::INetReactor         *  m_pNetReactor;
+	Net::NetHandlerClientPtr    m_pNetHandlerClient;
+	Net::MsgProcess          *  m_pMsgProcess;
+	//	Net::NetHandlerClient *  m_pNetHandlerClient;
 };

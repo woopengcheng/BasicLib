@@ -131,5 +131,8 @@
     <ClInclude Include="..\..\netlib\inc\ByteOrder.h">
       <Filter>common</Filter>
     </ClInclude>
+    <ClInclude Include="..\..\Common\BoostHelper.h">
+      <Filter>common</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>

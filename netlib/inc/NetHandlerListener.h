@@ -30,6 +30,7 @@ namespace Net
 		INetReactor * m_pNetReactor;
 	}; 
 
+	DECLARE_BOOST_POINTERS(NetHandlerListener);
 
 }
 

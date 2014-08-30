@@ -14,8 +14,7 @@ namespace Net
 			, m_pSession(pSession)
 		{}
 		virtual ~INetHandler( void )
-		{
-			SAFE_DELETE(m_pSession);
+		{ 
 		} 
 
 	public:
@@ -36,6 +35,7 @@ namespace Net
 		ISession    *  m_pSession;             //5 session 交给Net自动管理.所以一定要new出来.
 	}; 
 
+	DECLARE_BOOST_POINTERS(INetHandler);
 }
 
 #endif

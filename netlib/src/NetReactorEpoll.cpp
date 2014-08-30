@@ -20,19 +20,19 @@ namespace Net
 		return NET_ERROR_FAILURE;
 	}
 
-	INT32 NetReactorEpoll::AddNetHandler( INetHandler * pNetHandler , ENetHandlerFuncMask objMask /*= NET_FUNC_DEFAULT*/ )
+	INT32 NetReactorEpoll::AddNetHandler( INetHandlerPtr  pNetHandler  , ENetHandlerFuncMask objMask /*= NET_FUNC_DEFAULT*/ )
 	{
 
 		return NET_ERROR_FAILURE;
 	}
 
-	INT32 NetReactorEpoll::DelNetHandler( INetHandler * pNetHandler )
+	INT32 NetReactorEpoll::DelNetHandler( INetHandlerPtr  pNetHandler  )
 	{
 
 		return NET_ERROR_FAILURE;
 	}
 
-	INT32 NetReactorEpoll::ModNetHandler( INetHandler * pNetHandler , ENetHandlerFuncMask objMask )
+	INT32 NetReactorEpoll::ModNetHandler( INetHandlerPtr  pNetHandler  , ENetHandlerFuncMask objMask )
 	{
 
 		return NET_ERROR_FAILURE;

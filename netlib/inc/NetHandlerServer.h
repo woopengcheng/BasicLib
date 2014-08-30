@@ -13,10 +13,14 @@ namespace Net
 		virtual ~NetHandlerServer(){} 
 
 	public:
+		virtual INT32  OnClose( void )     ;
+
+	public:
 		virtual INT32 HandleMsg(UINT32 unMsgID, const char* pBuffer, UINT32 unLength);
 
 	}; 
 
+	DECLARE_BOOST_POINTERS(NetHandlerServer);
 }
 
 #endif 

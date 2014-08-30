@@ -18,7 +18,7 @@ namespace Net
 		SetIOCtrl(socket,FIOASYNC,&valuetrue);
 	}
 
-	UINT32 NetHelper::RecvMsg(SOCKET socket , char * pBuf , UINT32 unSize )
+	INT32 NetHelper::RecvMsg(SOCKET socket , char * pBuf , UINT32 unSize )
 	{
 #ifdef __linux
 		return ::recv(socket , pBuf , unSize , MSG_DONTWAIT);

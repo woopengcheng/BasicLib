@@ -46,18 +46,18 @@ namespace Net
 		char szBuf[DEFAULT_CIRCLE_BUFFER_SIZE];  //5 这里比系统定义的大.应该能一次性接收完.
 
 		SOCKET socket  = GetSocket();
-		UINT32 unBufSize = sizeof(szBuf);
+		INT32  nBufSize = sizeof(szBuf);
 		UINT32 unMaxBufSize = sizeof(szBuf);
 
 		do
 		{
-			unBufSize = NetHelper::RecvMsg(socket , szBuf , sizeof(szBuf));
-			if( unBufSize <  0 && NetHelper::IsSocketEagain())
+			nBufSize = NetHelper::RecvMsg(socket , szBuf , sizeof(szBuf));
+			if( nBufSize <  0 && NetHelper::IsSocketEagain())
 				return 0;
-			if( unBufSize <= 0 )
+			if( nBufSize <= 0 )
 				return NET_ERROR_FAILURE;
 
-			int result = RecvToCircleBuffer( szBuf , unBufSize);
+			int result = RecvToCircleBuffer( szBuf , nBufSize);
 			if( result < 0 )
 				return result;
 		}while(0);
@@ -259,7 +259,7 @@ namespace Net
 		{
 			m_pSession->OnClose();
 		} 
-		closesocket(GetSocket());
+		SAFE_DELETE(m_pSession);
 		return NET_ERROR_SUCCESS;
 	}
 

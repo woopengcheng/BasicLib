@@ -37,11 +37,10 @@ namespace Net
 		virtual INT32   Init( void ) = 0;
 		virtual INT32   Cleanup( void ) = 0;
 		virtual INT32   Update( void ) = 0;
-
 	public:
-		virtual INT32   AddNetHandler(INetHandler * pNetHandler , ENetHandlerFuncMask objMask = NET_FUNC_DEFAULT) = 0;
-		virtual INT32   DelNetHandler(INetHandler * pNetHandler) = 0;
-		virtual INT32   ModNetHandler(INetHandler * pNetHandler , ENetHandlerFuncMask objMask) = 0;
+		virtual INT32   AddNetHandler(INetHandlerPtr  pNetHandler  , ENetHandlerFuncMask objMask = NET_FUNC_DEFAULT) = 0;
+		virtual INT32   DelNetHandler(INetHandlerPtr  pNetHandler  ) = 0;
+		virtual INT32   ModNetHandler(INetHandlerPtr  pNetHandler  , ENetHandlerFuncMask objMask) = 0;
 	}; 
 	 
 }

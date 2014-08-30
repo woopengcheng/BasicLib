@@ -11,12 +11,17 @@ namespace Net
 { 
 	INT32 NetHandlerListener::Init( const char * pAddress , INT32 nPort , BOOL bResueAddr /*= TRUE */, INT32 nListenerCount /*= DEFAULT_LISTENER_COUNT*/ )
 	{
+		SOCKET socket = ::socket(AF_INET , SOCK_STREAM , IPPROTO_TCP);
+		SetSocket(socket);
+
 		Bind(pAddress , nPort);
 		return Listen(nListenerCount);
 	}
 
 	INT32 NetHandlerListener::Cleanup()
 	{
+		SAFE_DELETE(m_pSession);
+		closesocket(GetSocket());
 		return FALSE;
 	}
 
@@ -24,7 +29,6 @@ namespace Net
 		: INetHandler(pSession)
 		, m_pNetReactor(pNetReactor)
 	{
-		SetSocket(::socket(AF_INET , SOCK_STREAM , IPPROTO_TCP));
 
 		int nValueTrue = 1;
 		NetHelper::SetIOCtrl(GetSocket() , FIOASYNC , &nValueTrue);
@@ -78,7 +82,7 @@ namespace Net
 	{
 		if (m_pNetReactor)
 		{
-			NetHandlerServer * pServer = new NetHandlerServer(new ServerSession);
+			NetHandlerServerPtr pServer( new NetHandlerServer(new ServerSession) );
 			pServer->SetSocket(socket);
 			m_pNetReactor->AddNetHandler(pServer);
 		}

@@ -1,4 +1,5 @@
 #include "NetReactorSelect.h"
+#include "NetHandlerClient.h"
 
 #ifdef WIN32
 #include <windows.h>
@@ -43,7 +44,7 @@ namespace Net
 		MapNetHandlersT::iterator iter = m_mapNetHandlers.begin();
 		for (;iter != m_mapNetHandlers.end();++iter)
 		{
-			SAFE_DELETE(iter->second); 
+			iter->second.reset();
 		}
 		m_mapNetHandlers.clear();
 		m_mapNetEvents.clear();
@@ -71,13 +72,18 @@ namespace Net
 			MapNetHandlersT::iterator iterHandlers = m_mapNetHandlers.begin();
 			for (;iterEvents != m_mapNetEvents.end() && iterHandlers != m_mapNetHandlers.end() ;++iterEvents , ++ iterHandlers)
 			{
-				SOCKET socket = iterHandlers->second->GetSocket();
-				if (iterEvents->second & (NET_FUNC_READ | NET_FUNC_ACCEPT)) 
-					FD_SET(socket , pFdSetReads); 
-				if (iterEvents->second & NET_FUNC_WRITE) 
-					FD_SET(socket , pFdSetWrites); 
-				if (iterEvents->second & NET_FUNC_EXCEPT) 
-					FD_SET(socket , pFdSetExcepts);   
+				SOCKET socket = -1;
+				INetHandlerPtr pINetHandler = iterHandlers->second;
+				if (pINetHandler)
+				{
+					socket = iterHandlers->second.get()->GetSocket();
+					if (iterEvents->second & (NET_FUNC_READ | NET_FUNC_ACCEPT)) 
+						FD_SET(socket , pFdSetReads); 
+					if (iterEvents->second & NET_FUNC_WRITE) 
+						FD_SET(socket , pFdSetWrites); 
+					if (iterEvents->second & NET_FUNC_EXCEPT) 
+						FD_SET(socket , pFdSetExcepts);   
+				}
 			}
 		}
 
@@ -89,44 +95,52 @@ namespace Net
 		if (nResult > 0)
 		{
 			MapNetHandlersT::iterator iterHandlers = m_mapNetHandlers.begin();
-			for (; iterHandlers != m_mapNetHandlers.end(); ++ iterHandlers)
+			for (; iterHandlers != m_mapNetHandlers.end();)
 			{
 				BOOL  bClosed = FALSE;
-				SOCKET socket = iterHandlers->second->GetSocket(); 
-				INetHandler * pNetHandler = iterHandlers->second;
-
-				if (FD_ISSET(socket , pFdSetReads))
+				INetHandlerPtr  pNetHandler  = iterHandlers->second;
+				if (pNetHandler)
 				{
-					bClosed = pNetHandler->OnMsgRecving() < 0 || bClosed;
+					SOCKET socket = pNetHandler->GetSocket(); 
+
+					if (FD_ISSET(socket , pFdSetReads))
+					{
+						bClosed = pNetHandler->OnMsgRecving() < 0 || bClosed;
+					}
+
+					if (FD_ISSET(socket , pFdSetWrites))
+					{
+						bClosed = pNetHandler->OnMsgSending() < 0 || bClosed;
+					}
+
+					if (FD_ISSET(socket , pFdSetExcepts))
+					{
+						bClosed = TRUE;
+					}
+
+					ISession * pSession = pNetHandler->GetSession();
+					if (pSession && pSession->GetObjTimeout().IsExpired() || pSession->GetClosed())
+					{
+						bClosed = TRUE;
+					}
+
+					if (bClosed)
+					{
+						++ iterHandlers;
+						DelNetHandler(pNetHandler);  
+					}  
+					else
+					{
+						++ iterHandlers;
+					}
 				}
-
-				if (FD_ISSET(socket , pFdSetWrites))
-				{
-					bClosed = pNetHandler->OnMsgSending() < 0 || bClosed;
-				}
-
-				if (FD_ISSET(socket , pFdSetExcepts))
-				{
-					bClosed = TRUE;
-				}
-
-				ISession * pSession = pNetHandler->GetSession();
-				if (pSession && pSession->GetObjTimeout().IsExpired() || pSession->GetClosed())
-				{
-					bClosed = TRUE;
-				}
-
-				if (bClosed)
-				{
-					DelNetHandler(pNetHandler);
-				}  
 			}
 		} 
 
 		return NET_ERROR_SUCCESS;
 	}
 
-	INT32 NetReactorSelect::AddNetHandler( INetHandler * pNetHandler , ENetHandlerFuncMask objMask /*= NET_FUNC_DEFAULT*/ )
+	INT32 NetReactorSelect::AddNetHandler( INetHandlerPtr  pNetHandler  , ENetHandlerFuncMask objMask /*= NET_FUNC_DEFAULT*/ )
 	{
 		Assert_Re(m_unMaxConnectionCount > m_nNetHandlerCount , -1);
 	
@@ -148,24 +162,24 @@ namespace Net
 		return NET_ERROR_SUCCESS;
 	}
 
-	INT32 NetReactorSelect::DelNetHandler( INetHandler * pNetHandler )
+	INT32 NetReactorSelect::DelNetHandler( INetHandlerPtr  pNetHandler  )
 	{
 		if (pNetHandler)
 		{
-			pNetHandler->OnClose();
-			MapNetHandlersT::iterator iter = m_mapNetHandlers.find(pNetHandler->GetNetHandlerIndex());
-			if (iter != m_mapNetHandlers.end())
-			{
-				SAFE_DELETE(pNetHandler);
-				m_mapNetHandlers.erase(iter);
-			}
-			else
-				Assert_Re("cant find Net Handler\n" && 0 , NET_ERROR_FAILURE);
-
 			MapNetEventsT::iterator iterEvents = m_mapNetEvents.find(pNetHandler->GetNetHandlerIndex());
 			if (iterEvents != m_mapNetEvents.end())
 			{
 				m_mapNetEvents.erase(iterEvents);
+			}
+			else
+				Assert_Re("cant find Net Handler\n" && 0 , NET_ERROR_FAILURE);
+
+			MapNetHandlersT::iterator iter = m_mapNetHandlers.find(pNetHandler->GetNetHandlerIndex());
+			if (iter != m_mapNetHandlers.end())
+			{
+				pNetHandler->OnClose(); 
+				pNetHandler.reset();     //5 É¾³ý×Ô¼º
+ 				m_mapNetHandlers.erase(iter);
 			}
 			else
 				Assert_Re("cant find Net Handler\n" && 0 , NET_ERROR_FAILURE);
@@ -176,7 +190,7 @@ namespace Net
 		return NET_ERROR_SUCCESS;
 	}
 
-	INT32 NetReactorSelect::ModNetHandler( INetHandler * pNetHandler , ENetHandlerFuncMask objMask )
+	INT32 NetReactorSelect::ModNetHandler( INetHandlerPtr  pNetHandler  , ENetHandlerFuncMask objMask )
 	{
 		MapNetEventsT::iterator iterEvents = m_mapNetEvents.find(pNetHandler->GetNetHandlerIndex());
 		if (iterEvents != m_mapNetEvents.end())

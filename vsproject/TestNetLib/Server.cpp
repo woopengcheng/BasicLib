@@ -8,7 +8,7 @@ INT32 Server::Init()
 	}
 	m_pNetReactor->Init();
 
-	Net::NetHandlerListener * pNetHandlerListener = new Net::NetHandlerListener(m_pNetReactor , new Net::ISession);
+	Net::NetHandlerListenerPtr pNetHandlerListener(new Net::NetHandlerListener(m_pNetReactor , new Net::ISession));
 	pNetHandlerListener->Init("127.0.0.1" , 5555);
 	m_pNetReactor->AddNetHandler(pNetHandlerListener);
 
